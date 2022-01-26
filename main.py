@@ -2,7 +2,8 @@ import numpy as np
 import tkinter as tk
 from tkinter import *
 from PIL import Image,ImageTk
-import time
+import sys
+import os
 
 class RobotRoamer(object):
     def __init__(self, master, canvasSize, turtleSize, **kwargs):
@@ -46,16 +47,16 @@ class RobotRoamer(object):
                   height=6,
                   width=10,
                   command=self.start_programming).grid(column=0, row=2)
-        # tk.Button(window, 
-        #           text="Color",
-        #           height=6,
-        #           width=10,
-        #           command=self.move_forward).grid(column=1, row=2)
         tk.Button(window, 
                   text="Play", 
                   height=6,
                   width=10,
-                  command=self.play_programming).grid(column=2, row=2)
+                  command=self.play_programming).grid(column=1, row=2)
+        tk.Button(window, 
+                  text="Reset",
+                  height=6,
+                  width=10,
+                  command=self.reset_board).grid(column=2, row=2)
 
 
     def move_forward(self):
@@ -136,6 +137,12 @@ class RobotRoamer(object):
         if (command == "ROTATE RIGHT"):
             app.after(delay, self.turn_right)
         app.after(delay, self.update_turtle, app, commands, num+1)
+
+    def reset_board(self):
+        #I was going to simply clear all visible lines and labels and reset coords and direction
+        #But this is much easier
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
             
 
 
