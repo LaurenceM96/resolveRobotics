@@ -10,4 +10,6 @@ Also, it needs to look like a turtle, obviously. So I'll find a turtle sprite an
 
 ## Wednesday 26th
 I have the buttons working as I intended, and a turtle sprite, however I need to make sure the turtle turns when you press the turn buttons.<br>
-After this I want to add a programmability function, so that the user can press multiple buttons in a sequence, then press a play button and watch the turtle perform the functions they input.
+After this I want to add a programmability function, so that the user can press multiple buttons in a sequence, then press a play button and watch the turtle perform the functions they input.<br><br>
+
+After adding some rough programmability function, I think I need to explain how it works. First the user must click "Start Programming", then they can click the inputs they wish to queue, and when they are done they can press play to see those actions happen. If the user does not click "Start Programming" the turtle functions as before; i.e. the actions happen straight away.
