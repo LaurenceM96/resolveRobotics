@@ -1,15 +1,18 @@
-# Resolve Robotics
+# Roaming Space Turtle
 
-## First Impressions
-In this readMe I'll just be laying out my thoughts as I approach the problem so you can see my working and thinking as I go along.
+## Instructions
 
-The first thing I notice from the outline is that the buttons do not work as expected. I'll be sorting that first, as it needs to work intuitively since its an
-educational tool. I believe there should be a forward button, which moves the turtle forward in the direction it is facing, and rotation buttons so that its
-direction can be changed. I might make some adjustments to this based on how it feels.<br>
-Also, it needs to look like a turtle, obviously. So I'll find a turtle sprite and be implementing that.<br><br>
+The game begins with a blank page, the user can move forward, rotate left 90 degrees, or rotate right 90 degrees using the top 3 buttons. Below those buttons you will find three more buttons: Start Programming, Play, and Reset. Start programming will disable the first 3 movement buttons, but instead, your actions will be scheduled to play when the "Play" button is pressed. Reset will reset the turtle to its starting position and clear all lines and scheduled commands.<br><br>
 
-## Wednesday 26th
-I have the buttons working as I intended, and a turtle sprite, however I need to make sure the turtle turns when you press the turn buttons.<br>
-After this I want to add a programmability function, so that the user can press multiple buttons in a sequence, then press a play button and watch the turtle perform the functions they input.<br><br>
+There is one last button you will find right at the bottom, "Space Turtles". This is a simple game mode where the user must use their roaming space turtle to eat all of the asteroids.
 
-After adding some rough programmability function, I think I need to explain how it works. First the user must click "Start Programming", then they can click the inputs they wish to queue, and when they are done they can press play to see those actions happen. If the user does not click "Start Programming" the turtle functions as before; i.e. the actions happen straight away.
+## Notes
+
+The code and the game in general is very rough around the edges, but given the time frame I simply wanted to fit as many functional features in as I could. There are many more things I wanted to implement but simply didnt have time, these include:<br>
+<ul>
+    <li>Pen up and pen down - I feel this would be fairly easy to add as of right now, but without colours and being able to input angles, seems a bit useless.</li>
+    <li>Colours - This in conjunction with being able to input smaller angles and step size would mean the user could draw things. Instead of creativity I seemed to gravitate towards a game like setup instead.</li>
+    <li>Being able to input smaller step sizes and angles.</li>
+    <li>Game over and Win screens on the space turtles game - This would be a nice feature to make the game more interesting. I feel like the game should be game over if the user steps off screen.</li>
+    <li>Shortest path algorithm - This would add another element to the game so the user has to try and find the shortest path to get all of the asteroids.</li>
+</ul>
